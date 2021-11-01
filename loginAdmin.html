@@ -10,18 +10,26 @@
 </head>
 
 <body>
-    <h3>login</h3>
-    <div class="container">
+    <h3 class="text-center mt-3">Accedi all'area utenti</h3>
+    <div class="container fluid text-center mt-2 mt-md-4">
         <div class="row">
+            <div class="col-12 col-6 mt-2 mt-md-4">
+                <input type="text" aria-label="login" aria-describedby="login" placeholder="login">
+            </div>
+            <div class="col-12 col-6 mt-2 mt-md-4">
+                <input type="text" aria-label="password" aria-describedby="password" placeholder="password">
+            </div>
 
-            <input type="text">
-            <input type="text">
-            <button class="btn btn-success" id="loginAdmin">Login</button>
-            <a href="#" class="ml-2 ml-md-3 ml-lg-5"> non sei registrato?</a>
+            <div class="col-12 col-6 mt-2 mt-sm-3">
+                <button class="btn btn-success" id="loginAdmin">Login</button>
+            </div>
+            <div class="col-12 col-6">
+                <button class="btn" onclick="expression()" id="unregistered">non sei registrato?</button>
+            </div>
         </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5 d-none fluid" id="registrationForm">
         <div class="row">
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
